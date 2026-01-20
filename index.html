@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girdhar Kumawat - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #333;
+            --text-color: #222;
+            --link-color: #000;
+            --border-color: #000;
+            --bg-color: #f4f4f4;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.5;
+            font-size: 14px;
+            /* Standard resume font size */
+            padding: 20px 0;
+        }
+
+        /* Paper / Container Style */
+        .resume-container {
+            max-width: 800px;
+            /* A4 width approx */
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px 50px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+
+        .contact-info {
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: var(--link-color);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 18px;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 16px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        /* Content Styling */
+        p {
+            margin-bottom: 5px;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 5px;
+        }
+
+        li {
+            margin-bottom: 3px;
+        }
+
+        /* Specific Layout Utilities */
+        .flex-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: 500;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .skills-list li {
+            list-style: disc;
+            /* Ensuring bullets for skills */
+        }
+
+        .project-title {
+            font-weight: 700;
+            font-size: 15px;
+            margin-top: 8px;
+            margin-bottom: 2px;
+            text-decoration: underline;
+            /* Matches the visual weight of project titles often used */
+            text-decoration-thickness: 0px;
+            /* actually removing underline, keeping bold */
+            text-decoration: none;
+        }
+
+        /* Print Media Query */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .resume-container {
+                padding: 20px;
+            }
+
+            .flex-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="resume-container">
+        <header>
+            <h1>Girdhar Kumawat</h1>
+            <div class="contact-info">
+                <a href="mailto:girdharkumawat3108@gmail.com"><i class="fas fa-envelope"></i>
+                    girdharkumawat3108@gmail.com</a>
+                <a href="https://www.linkedin.com/in/girdhar-kumawat-0b541a295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="new"><i class="fab fa-linkedin"></i> GirdharKumawat</a>
+                <a href="https://github.com/GirdharKumawat" target="new"><i class="fab fa-github"></i>
+                    GirdharKumawat</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p>
+                B.Tech student in Computer Science and Artificial Intelligence with strong expertise in integrating AI
+                models into scalable full-stack applications. Proficient in Python, Django, and React, with hands-on
+                experience implementing Generative AI, WebSockets, and JWT for secure, real-time user interaction.
+                Passionate about researching advancements in AI/ML and applying data structures to build reliable,
+                innovative solutions.
+            </p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="flex-row">
+                <span>B.Tech in Computer Science and Artificial Intelligence</span>
+                <span>Expected Graduation: 2027</span>
+            </div>
+            <ul>
+                <li>JECRC College, Jaipur | 3rd Year | CGPA: 8.3 </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><span class="bold">Languages:</span> Python, C++, JavaScript, SQL </li>
+                <li><span class="bold">Web Technologies:</span> Django, FastAPI, React.js, REST APIs, WebSockets, JWT
+                    Auth </li>
+                <li><span class="bold">Libraries & Frameworks:</span> NumPy, Pandas, Redux, TailwindCSS </li>
+                <li><span class="bold">Tools & Others:</span> GitHub, Postman, Docker </li>
+                <li><span class="bold">Core Concepts:</span> Data Structures & Algorithms (DSA), OOPS, SDLC, Basic Data
+                    Preprocessing, ML Concepts </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <div class="project-item">
+                <div class="project-title">QuizMaster – AI-Powered Platform</div>
+                <ul>
+                    <li><span class="bold">Technologies:</span> Django, React.js, LangChain (Gen AI), WebSockets, JWT,
+                        PostgreSQL</li>
+                    <li><span class="bold">AI Integration:</span> Implemented LangChain workflows to generate
+                        topic-specific quiz questions from user inputs, utilizing Prompt Engineering to ensure accurate
+                        and structured outputs.</li>
+                    <li><span class="bold">Real-Time Performance:</span> Implemented WebSockets to stream AI-generated
+                        questions to the frontend instantly, ensuring a seamless, low-latency user experience.</li>
+                    <li><span class="bold">Secure Backend:</span> Engineered a secure RESTful API architecture with JWT
+                        Authentication to manage user sessions, quiz history, and result analytics efficiently.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <a href="https://www.expensemanager.girdharkumawat.site/">
+                    <div class="project-title">ExpenseTracker – Full-Stack Expense Management App
+                </a>
+                <ul>
+                    <li>Full-stack expense tracking app using React, Redux Toolkit, TailwindCSS, and Django REST API.
+                    </li>
+                    <li>Implemented JWT-based authentication, multi-user support, and split expense management with
+                        secure CRUD operations.</li>
+                    <li>Enabled efficient expense categorization, real-time updates, and smooth frontend-backend
+                        integration.</li>
+                    <li>Deployed on cloud with a live working link, delivering a scalable and responsive solution for
+                        improved financial tracking and user experience.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">ExpertMatch – Expert-Candidate Matching Platform</div>
+                <ul>
+                    <li>Developed a web app using Django, React, REST API, PostgreSQL for expert-candidate matching.
+                    </li>
+                    <li>Implemented secure authentication, profile management, and automated matching for interview
+                        efficiency.</li>
+                    <li>Designed a dashboard showing real-time stats on users, experts, and successful matches.</li>
+                    <li>Delivered a scalable, responsive platform streamlining candidate-expert connections and
+                        improving preparation outcomes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Training & Certifications</h2>
+            <ul>
+                <li><span class="bold">Postman API Fundamentals Student Expert:</span> Gained hands-on experience with
+                    API design, testing, and documentation using Postman.</li>
+                <li><span class="bold">Machine Learning:</span> Completed training covering supervised/unsupervised
+                    learning, model evaluation, and deployment using Python.</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+
+</html>
